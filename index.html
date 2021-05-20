@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🫖 Tea Time</title>
+    <style>
+        body {
+            background: linear-gradient(0.5turn, #88decc, #dc6c76);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 50px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 35px;
+            text-align: center;
+            border-style: solid;
+            border-color: #C9C1B8;
+            border-width: 8px 1px;
+            border-radius: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 15px;
+            margin: 20px 0 10px;
+        }
+
+        img.tea-cup {
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+            border: dotted;
+            max-width: 50%;
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            opacity: .5;
+        }
+
+        .moreInfo {
+            text-align: center;
+            text-decoration: none;
+            font-size: 38px;
+        }
+
+        .container {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            font-size: 15px;
+            padding: 30px 30px;
+        }
+
+        img.teaLogo {
+            display: block;
+            margin: 0 auto;
+            height: 50px;
+            max-width: 50px;
+            padding-bottom: 5px;
+        }
+
+        button {
+            border-radius: 28px;
+            margin: 0 auto;
+            display: block;
+            background-color: #fff;
+            border: hidden;
+            color: black;
+            font-size: 14px;
+            line-height: 12px;
+            padding: 15px 10px;
+            text-decoration: none;
+            transition: all 100ms ease;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, .6);
+
+        }
+
+        button:hover {
+            cursor: pointer;
+            opacity: .7;
+        }
+
+        .designer {
+            opacity: .5;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>
+            <strong>Time for Tea</strong>
+        </h1>
+        <hr />
+
+        <div class="container">
+            <img ☕ src="https://www.canyonranch.com/wp-content/uploads/2014/11/loose-tea-leaves-tea-cup-167286684.jpg"
+                alt="Tea Cup" width="100%" class="tea-cup" />
+            <h2>What is tea?</h2>
+            <p>
+                <span style="color: #000000; font-weight: bold">Tea</span> is an
+                aromatic beverage commonly prepared by pouring hot or boiling water
+                over cured or fresh leaves of the Camellia sinensis, an evergreen
+                shrub native to East Asia. After water, it is the most widely consumed
+                drink in the world. There are many different types of tea; some, like
+                Darjeeling and Chinese greens, have a cooling, slightly bitter, and
+                astringent flavour, while others have vastly different profiles that
+                include sweet, nutty, floral, or grassy notes. Tea has a stimulating
+                effect in humans primarily by its caffeine content.
+            </p>
+            <br />
+            <div class="moreInfo">
+                <p>
+                    Click
+                    <a href="https://en.wikipedia.org/wiki/Tea" target="_blank">
+                        here</a>
+                    for more information.
+                </p>
+            </div>
+
+            <br />
+            <footer>
+                <button class="buyButton">
+                    <img src="https://static.trotcdn.com/images/art/icon-header-contact.png?v=100033932079-4"
+                        alt="Tea Pot Logo" class="teaLogo" width="80%" />
+                    <br />
+                    Buy tea here
+                </button>
+
+                <hr />
+
+                <p class="designer">This page was built by <em>Amanda Corey</em></p>
+
+
+            </footer>
+
+    </section>
+
+    <script>
+        function buy() {
+            let name = prompt("What is your name?");
+            let favoriteTea = prompt("What is your favorite type of tea?");
+            if (name.length) {
+                alert("Thank you, " + name + "! Your order for " + favoriteTea + " tea is on the way, good choice!");
+            } else {
+                alert("No name? Maybe some tea will wake you up.")
+            }
+        };
+
+
+        let buyButton = document.querySelector(".buyButton");
+        buyButton.addEventListener("click", buy);
+    </script>
+</body>
+
+</html>
